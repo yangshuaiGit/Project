@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	
+	<header id="header"></header>
+	<div class="con"></div>
+	<footer id="footer"></footer>
+
+
+	
+	<script src="js/jquery.seajs.underscore.js"></script>
+	<script>
+		seajs.config({
+			base:'./'
+		});
+		seajs.use(['js/pro3.js'],function(a){
+			a.initPage();
+		})
+	</script>
+</body>
+</html>

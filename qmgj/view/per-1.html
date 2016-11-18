@@ -1,0 +1,53 @@
+<div class="bot1">
+	<h1><span class="line">|</span>我关注的项目</h1>
+	<ul class="list-img clear">
+		<li class="clear" ng-repeat="a in perList">
+			<img class="li-img" ng-src="{{a.img}}" alt="">
+			<div class="li-right">
+				<h2>{{a.name}}</h2>
+				<p class="txt1">{{a.tname}}</p>
+				<p class="progress">
+					<span  style="width:{{arr[$index]+'px'}}"></span>
+				</p>
+				<p class="txt2">
+				    {{a.txt1}}
+					<span>{{a.money1}}</span>
+				</p>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="bot2">
+<h1><span class="line">|</span>当前最热</h1>
+<ul  class="rec-show clear">
+	<li class="one" ng-repeat="b in per1List">
+		<a ui-sref="detail"><img ng-src="{{b.img}}" alt=""></a>
+		<div class="personal-txt">
+			<div class="personal-txt-top">
+				<h2>{{b.name}}</h2>
+				<p class="two">{{b.del}}</p>
+			</div>
+			<div class="personal-txt-bot">
+				<p class="progress">
+					<span style="width:{{arr1[$index]+'px'}}"></span>
+				</p>
+				<ul class="progress-del clear">
+					<li>
+						<p class="one">{{b.progress1}}</p>
+						<p class="two">{{b.progress2}}</p>
+					</li>
+					<li>
+						<p class="one">{{b.money1}}</p>
+						<p class="two">{{b.money2}}</p>
+					</li>
+					<li>
+						<p class="one">{{b.day1}}</p>
+						<p class="two">{{b.day2}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li>
+</ul>
+</div>

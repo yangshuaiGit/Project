@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/geg.css">
+  
+</head>
+
+<body>
+    <div class="main w1000">
+        <div class="up">
+            <img src="./images/logo_register.png" alt="">
+            <div class="clear"><a href="./login.html">我有账号</a></div>
+        </div>
+        <div class="down">
+            <h3>注册账号</h3>
+            <div class="title">
+                账户信息
+            </div>
+            <div class="input-area">
+                <div class="clear">
+                    <p><span>*</span>用户名： </p>
+                    <input type="text" name="" value="" placeholder="">
+                </div>
+                <div class="clear">
+                    <p><span>*</span>密码：</p>
+                    <input type="password" name="" value="" placeholder=""> </div>
+                <div class="clear">
+                    <p><span>*</span>确认密码： </p>
+                    <input type="password" name="" value="" placeholder="">
+                </div>
+            </div>
+            <div class="title">
+                基本信息<span>信息越完整，越有机会参与志愿者活动哦！ 您的个人信息我们承诺仅用于为您办理公益活动保险，并将尽最大努力保护您的个人隐私。</span>
+            </div>
+            <div class="info">
+            <div class="clear">
+                <p><span class="strong">*</span>真实姓名 </p>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            </div>
+            <div class="clear"><span>性别: </span>
+                <input type="radio" name="sex" value="" placeholder="">男
+                <input type="radio" name="sex" value="" placeholder="">女
+                </div>
+            <div class="clear"><span>年龄:</span>
+                <input type="number" name="" value="" placeholder="" class="class1">
+            </div>
+            <div class="clear"><span>籍贯:</span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            </div>
+            <div class="cityList">
+                <label for="sheng">长住地址：</label>
+                <select id="sheng">
+                    <option value="-1">省份</option>
+                </select>
+                <label for="shi"></label>
+                <select id="shi">
+                    <option value="-1">地级市</option>
+                </select>
+                <label for="qu"></label>
+                <select id="qu">
+                    <option value="-1">市、县级市</option>
+                </select>
+            </div>
+            <div class="clear"><span>是否顺风员工: </span>
+                <input type="radio" name="type" value="" placeholder="" id="yes">是
+                <input type="radio" name="type" value="" placeholder="" id="no">否
+                </div>
+                <div class="yes">
+                <div class="clear">
+                <span>邮箱： </span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+            	 <div class="clear">
+                <span>工号 :</span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+            	 <div class="clear">
+                <span>所属区域: </span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+					
+                </div>
+                <div class="no">
+                <div class="clear">
+                <span>邮箱： </span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+            	 <div class="clear">
+                <span>证件号 :</span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+            	 <div class="clear">
+                <span>手机号码: </span>
+                <input type="text" name="" value="" placeholder="" class="class1">
+            	</div>
+				
+                </div>
+                <button type="submit" ><a href="./reg.html">注册</a></button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="./js/citylist.js" type="text/javascript"></script>
+    <script src="./js/provice.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		if($('#yes').attr('checked')=="checked"){
+    			$('.yes').show();
+    			$('.no').hide();
+    		}else{
+    			$('.no').show();
+    			$('.yes').hide();
+    		}
+    	})
+    		
+    	
+    </script>
+</body>
+
+</html>

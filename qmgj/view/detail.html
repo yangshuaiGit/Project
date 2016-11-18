@@ -1,0 +1,118 @@
+<div class="detail-box1 clear" >
+	<div class="left clear" ng-repeat="a in left1">
+		<div class="txt">
+			<h2>{{a.name}}</h2>
+			<p>{{a.fname}}</p>
+		</div>
+		<div class="del-img">
+			<a ui-sref="detail"><img ng-src="{{a.img}}" alt=""></a>
+			<div class="del-txt">
+				<p class="icon-txt">
+					<span class="icon icon-play">{{a.txt1}}</span>
+					<span class="icon icon-video">{{a.txt2}}</span>
+				</p>
+				<p class="txt2">{{a.del}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="right" ng-repeat="c in right1">
+		<ul>
+			<li>
+				<p class="one">{{c.money1}}</p>
+				<p class="two">{{c.money2}}  <span>{{c.money3}}</span></p>
+			</li>
+			<li>
+				<p class="one">{{c.people1}}</p>
+				<p class="two">{{c.people2}}</p>
+			</li>
+			<li>
+				<p class="one">{{c.day1}}</p>
+				<p class="two">{{c.day2}}</p>
+			</li>
+		</ul>
+		<p class="txt">
+			<a ui-sref="form.form-1">{{c.txt3}}</a>
+			<span class="icon icon-weChat">{{c.txt4}}</span>
+		</p>
+		<p class="txt1">
+			{{c.txt5}}
+		</p>
+		<div class="bot clear">
+			<div class="left-txt">
+				<p>{{c.fname1}}</p>
+				<p>
+					<span>{{c.txt6}}</span>
+					<span>{{c.txt7}}</span>
+				</p>
+			</div>
+			<div class="right-img">
+				<img ng-src="{{c.img3}}" alt="">
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="detail-txt">
+	<span ng-click="myclick(0)" ng-class="{active:showActive==0}">项目介绍</span>
+	<span ng-click="myclick(1)" ng-class="{active:showActive==1}">发展历程</span>
+	<span ng-click="myclick(2)" ng-class="{active:showActive==2}">圈子交流</span>
+</div>
+<div class="detail-box2 clear" ng-repeat="d in show">
+	<div class="left" ng-show="showActive==0">
+		<img ng-src="{{d.img1}}" alt="">
+	</div>
+	<div class="left" ng-show="showActive==1">
+		<img ng-src="{{d.img5}}" alt="">
+	</div>
+	<div class="rigth">
+		<ul>
+			<li>
+				<h1 class="txt1 clear">
+					{{d.txt8}}
+					<span>{{d.txt10}}</span>
+					<span class="red">{{d.txt9}}</span>
+				</h1>
+				<div class="thank-txt">
+					<h2>{{d.txt11}}</h2>
+					<p class="txt2">
+						{{d.txt12}}
+					</p>
+					<p class="txt3">
+						{{d.txt13}}
+						<span>{{d.txt14}}</span>
+					</p>
+					<a ui-sref="form.form-1">{{d.txt8}}</a>
+				</div>
+			</li>
+			<li>
+				<h1 class="txt1 clear">
+					{{d.txt15}}
+					<span>{{d.txt16}}</span>
+					<span class="red">{{d.txt17}}</span>
+				</h1>
+				<div class="thank-txt">
+					<h2>{{d.txt11}}</h2>
+					<p class="txt2">
+						{{d.txt18}}
+					</p>
+					<p class="txt3">
+						{{d.txt13}}
+						<span>{{d.txt14}}</span>
+					</p>
+					<a href="#">{{d.txt15}}</a>
+				</div>
+			</li>
+		</ul>
+		<div class="about">
+			<h2>{{d.txt19}}</h2>
+			<div class="about-txt">
+				<p>
+					{{d.txt20}}<span>{{d.txt21}}</span>{{d.txt22}}<span>{{d.txt23}}</span>{{d.txt31}}<span>{{d.txt24}}</span>{{d.txt25}}<span>{{d.txt26}}</span>{{d.txt27}}<span>{{d.txt28}}</span>{{d.txt29}}
+				</p>
+				<p>
+					{{d.txt30}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

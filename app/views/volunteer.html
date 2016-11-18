@@ -1,0 +1,112 @@
+
+        <div class="volunteer-banner">
+		     <img src="../images/volunteer-banner.jpg" alt="">
+        </div>
+
+
+		<div class="main clear">
+		    <!-- 左侧菜单栏 -->
+			<div class="left-menu">
+				<h3>
+					<i class=" icon icon-page"></i>
+					<span>我是志愿者</span>
+
+				</h3>
+				<ul>
+					<li>
+						<a href="volunteer.html"  class="current">志愿者活动纪念册</a>
+					</li>
+					<li>
+						<a href="vol-story.html">公益故事</a>
+					</li>
+					<li>
+						<a href="#">招募广告</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- 右侧内容 -->
+			<div class="right-con">
+				
+               <div class="location">
+					<span>您当前的位置：</span>
+					<a href="#">首页</a>  > 
+					<a href="#">我是志愿者</a>  > 
+					<span class="span">志愿者活动纪念册</span>
+				</div>
+
+				<div class="img-list">
+					<div class="select-year">
+						<ul>
+						    
+							<li class="active"><a>2016</a></li>
+							<li><a>2015</a></li>
+							<li><a>2014</a></li>
+							<li><a>2013</a></li>
+							<li><a>2012</a></li>
+							
+						</ul>
+					</div>
+					<div class="photo">
+					    
+						<ul class="photo-16 clear">
+						##for(i=0;i< 9;i++){##
+							<li>
+								<a href="{{data.vol.photo_16[i].href}}"><img src="{{data.vol.photo_16[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+									<i></i>
+									{{data.vol.photo_16[i].text}}</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-15 clear">
+						##for(i=0;i< 9;i++){##
+							<li>
+								<a href="{{data.vol.photo_16[i].href}}"><img src="{{data.vol.photo_15[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+									<i></i>
+									{{data.vol.photo_15[i].text}}</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-14 clear">
+						##for(i=0;i< 3;i++){##
+							<li>
+								<a href="{{data.vol.photo_14[i].href}}"><img src="{{data.vol.photo_14[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+									<i></i>
+									{{data.vol.photo_14[i].text}}</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-13">
+							<li>没有找到相关结果</li>
+						</ul>
+						<ul class="photo-12">
+							<li>没有找到相关结果</li>
+						</ul>
+						
+					</div>
+				</div>
+
+				<div class="page">
+					<ul class="clear">
+					    
+						<li><a href="#">{{data.news.page[1]}}</a></li>
+						<li><a href="#">{{data.news.page[2]}}</a></li>
+						<li><a href="#">{{data.news.page[6]}}</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+
+
+		</div>

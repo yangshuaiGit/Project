@@ -1,0 +1,102 @@
+.zy-header {
+  position: relative;
+  z-index: 5;
+}
+.zy-header .logo {
+  height: 100px;
+  line-height: 100px;
+  overflow: hidden;
+  color: #666;
+}
+.zy-header .logo .logo-img {
+  float: left;
+  margin-top: 15px;
+  width: 158px;
+  height: 78px;
+  background: url(../images/logo.jpg) no-repeat;
+}
+.zy-header .logo .logo-rt {
+  float: right;
+}
+.zy-header .logo .logo-rt .icon-line {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  background-position: -32px 2px;
+  margin: 5px 5px 0 5px;
+}
+.zy-header .logo .logo-rt .enter {
+  color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  display: inline-block;
+  padding: 5px 8px 5px 28px;
+  line-height: 1;
+  position: relative;
+  background: #7dbc29 url(../images/logo_16.png) no-repeat 5px 5px;
+}
+.zy-header .logo .logo-rt .enter .new {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+}
+.zy-header .logo .logo-rt .sc {
+  color: #666;
+}
+.zy-header .logo .logo-rt .sc:hover {
+  color: #333;
+}
+.zy-header .logo .logo-rt .sc:hover .icon-star {
+  background-position: -16px 0px;
+}
+.zy-header .logo .logo-rt .sc .icon-star {
+  width: 16px;
+  height: 16px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  display: inline-block;
+  background-position: 0px 0px;
+  margin-right: 3px;
+  margin-bottom: -2px;
+}
+.zy-header .menu {
+  height: 40px;
+  background: #5d96f2;
+}
+.zy-header .menu .nav li.top {
+  background: url(../images/menu_line.png) no-repeat 0 center;
+  float: left;
+  position: relative;
+}
+.zy-header .menu .nav li.top:hover .top-link,
+.zy-header .menu .nav li.top.active .top-link {
+  background: #4b83ee;
+}
+.zy-header .menu .nav li.top .top-link {
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+  width: 140px;
+}
+.zy-header .menu .nav li.top .sub {
+  background: rgba(240, 245, 248, 0.8);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+}
+.zy-header .menu .nav li.top .sub a {
+  display: block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.zy-header .menu .nav li.top .sub a:hover {
+  background: #fff;
+}

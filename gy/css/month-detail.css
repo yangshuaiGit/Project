@@ -1,0 +1,25 @@
+.month-detail .title {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 20px;
+}
+.month-detail .title p {
+  margin-top: 15px;
+  color: #bbb;
+}
+.month-detail .location {
+  color: #666;
+  margin-bottom: 12px;
+  border-bottom: 1px dotted #dfdfdf;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.month-detail .location a {
+  color: #555;
+  padding: 0 2px;
+}
+.month-detail .location .span {
+  color: #999;
+  padding: 0 2px;
+}

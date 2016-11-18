@@ -1,0 +1,36 @@
+<ul class="ul-box clear">
+		<li class="active1">
+			<span class="circle active1">1</span>
+			<p class="txt active1">填写核对信息</p>
+		</li>
+		<li class="active">
+			<span class="circle active">2</span>
+			<p class="txt active">支付</p>
+		</li>
+		<li>
+			<span class="circle">3</span>
+			<p class="txt">完成</p>
+		</li>
+	</ul>
+<div class="container" ng-repeat="b in form2">
+		<h1>{{b.name}}</h1>
+		<p class="pay-txt"><span class="black">{{b.txt1}}</span>请您在<span class="red">24小时</span>内付清款项，否则订单会被自动取消</p>
+		<div class="container-box1">
+			<div class="pay clear">
+				<div class="pay1 clear">
+					<div class="active">快捷支付</div>
+					<div>网银支付</div>
+				</div>
+				<p>应付款<span>￥5.00</span></p>
+			</div>
+			<div class="pay2">
+				<p class="sel-bank">请选择银行：</p>
+				<ul class="bank-box clear">
+					<li ng-repeat="img in imgList"  ng-click="myclick($index)" ng-class="{active:showActive==$index}">
+						<img ng-src="{{img.img}}" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn" ui-sref="form.form-3">确认支付</div>
+	</div>	

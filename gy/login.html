@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="sfgy">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	
+</head>
+<body ng-controller="loginController">
+	<div class="top w1000">
+		<img src="images/logo.jpg" alt="">
+		<a href="index.html">返回官网</a>
+	</div>
+	<div class="content">
+		<div class="main w1000">
+			<img src="images/bg.png" alt="" class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+			<div class="col-lg-5 right col-md-5 col-sm-5 col-xs-5">
+			<p>顺丰公益志愿者平台</p>
+			<form name="myForm" ng-model="myForm" novalidate>
+				<div class="box">
+					<div class="number">
+						<h3>账号</h3>
+						<input type="text" name="username" ng-model="username" value="" placeholder="用户名" required>
+						<img src="images/account.gif" alt="">
+						<span class="input-txt" ng-show="myForm.username.$dirty && myForm.username.$error.required">用户名不能为空!</span>
+					</div>
+					<div class="pwd">
+						<h3>密码</h3>
+						<input type="text" name="password" ng-model="password" value="" placeholder="密码" required>
+						<img src="images/password.gif" alt="" class="passwd">
+						<span ng-show="myForm.password.$dirty && myForm.password.$error.required">密码不能为空!</span>
+					</div>
+					<div class="anquan">
+						<h3>验证码</h3>
+						<input type="text" name="code" ng-model="code" value="" placeholder="" required class="yanzm">
+						<img src="images/Kaptcha.jpg" alt=""
+						class="suiji">
+						<a class="change">换一个</a>
+						<img src="images/code.gif" alt="" class="yzm">
+						<span ng-show="myForm.code.$dirty && myForm.code.$error.required">请输入验证码</span>
+					</div>
+					<button type="submit" ng-click="formValid()"><a href="">登录</a></button>
+					<a href="resetCode.html" class="col-lg-8">找回密码</a>
+					<a href="reg.html" class="col-lg-4" ui-sref="reg">注册账号</a>
+				</div>
+				
+			</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer w1000">
+	<div class="col-lg-9 col-md-9">
+		<p>联系地址：深圳市南山区科技园科苑路软件产业基地1栋B座10楼</p>
+		<p>电子邮箱：sfpublicwelfare@sf-express.com</p>
+		<p>顺丰公益版权所有 粤ICP备08034243号-20 </p>
+		<p>Copyright © 2015 sf-express.com Inc. All rights reserved</p>
+		</div>
+		<img src="images/logo.jpg" alt="">
+	</div>
+	<script type="text/javascript">
+			var app = angular.module('sfgy',[]);
+		app.controller('loginController', ['$scope','$http', function($scope,$http){
+			$scope.formValid = function(){
+				console.log( "验证结果：" + $scope.myForm.$valid );
+				if( $scope.myForm.$valid ){
+					$http({
+						url: '',
+						type:'get',
+						data: {
+							username: $scope.username,
+							password: $scope.password,
+							code:$scope.code
+						}
+					}).success(function(res){
+
+					})
+				}
+				
+			}
+		}])
+	</script>
+</body>
+</html>

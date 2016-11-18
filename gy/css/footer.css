@@ -1,0 +1,9 @@
+.zy-footer {
+  clear: both;
+  border-top: 1px solid #dfdfdf;
+  color: #666;
+}
+.zy-footer .f-bg {
+  padding: 15px 0;
+  background: url(../images/logo.jpg) no-repeat right 15px;
+}

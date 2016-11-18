@@ -1,0 +1,70 @@
+<div class="top-txt ">
+    <div class="content-program">
+        <p class="txt1">
+            <a href="" ng-repeat="a in Nlist" ng-click="checkContent($index)" ng-class="{red:showAc==$index}">{{a.name}}</a>
+        </p>
+        <p class="top-txt2">
+            <a href="">筹资中</a>
+            <a href="">即将结束</a>
+            <a href="" class="red">已成功</a>
+        </p>
+        <p class="top-txt3">
+            <a href="" class="red">最新</a>
+            <a href="">热门</a>
+            <a href="">结束时间</a>
+        </p>
+    </div>
+</div>
+<div class="program-box">
+    <div class="content-program">
+        <ul class="program-show clear">
+            <li class="one" ng-repeat="s in Alist | filter: myfilter">
+                <img ui-sref="detail({id:{{s.id}}})" class="program-img" ng-src="{{s.img}}" alt="">
+                <div class="del-txt">
+                    <div class="del-txt-top">
+                        <h2>{{s.name}}</h2>
+                        <p>{{s.tname}}</p>
+                        <p class="two">{{s.del}}</p>
+                    </div>
+                    <div class="del-txt-bot">
+                        <p class="icon-txt">
+                            <span class="icon icon-play">{{s.txt1}}</span>
+                        </p>
+                        <p class="progress">
+                            <span style="width:{{arr2[$index]+'px'}}"></span>
+                        </p>
+                        <ul class="progress-del clear">
+                            <li>
+                                <p class="one">{{s.progress1}}</p>
+                                <p class="two">{{s.progress2}}</p>
+                            </li>
+                            <li>
+                                <p class="one">{{s.money1}}</p>
+                                <p class="two">{{s.money2}}</p>
+                            </li>
+                            <li>
+                                <p class="one">{{s.people1}}</p>
+                                <p class="two">{{s.people2}}</p>
+                            </li>
+                            <li>
+                                <p class="one">{{s.day1}}</p>
+                                <p class="two">{{s.day2}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="program-bot">
+    <a href="" class="active">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <a href="">6</a>
+    <span>&#8230;</span>
+    <a href="">&gt;</a>
+    <a href="" class="last">尾页</a>
+</div>

@@ -1,0 +1,168 @@
+body {
+  background: #f3f8fc url(../images/register_bg.png) no-repeat;
+}
+.main .up {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.main .up img {
+  display: inline-block;
+}
+.main .up div {
+  display: inline-block;
+  float: right;
+}
+.main .up a {
+  background-color: #7dbc29;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px 7px;
+  margin-top: 40px;
+  font-weight: bolder;
+}
+.main .down {
+  background: #fff;
+  padding: 30px;
+}
+.main .down h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main .down .title {
+  background-color: #f9f9f9;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 15px;
+  overflow: hidden;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.main .down .title span {
+  color: #f93;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.main .down .input-area {
+  margin-bottom: 40px;
+}
+.main .down .input-area div {
+  line-height: 30px;
+  vertical-align: top;
+}
+.main .down .input-area div p {
+  width: 150px;
+  height: 30px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  float: left;
+}
+.main .down .input-area div input {
+  float: left;
+  margin-top: 10px;
+  height: 32px;
+  width: 25%;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #666;
+  margin-left: 10px;
+}
+.main .down .input-area div input:hover {
+  border: 1px solid #005599;
+}
+.main .down .input-area span {
+  color: red;
+  margin-right: 3px;
+}
+.main .down .info p {
+  width: 150px;
+  height: 30px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  float: left;
+}
+.main .down .info p .strong {
+  color: red;
+  width: 5px;
+  float: right;
+}
+.main .down .info .class1 {
+  float: left;
+  margin-top: 10px;
+  height: 32px;
+  width: 25%;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #666;
+  margin-left: 10px;
+}
+.main .down .info .class1:hover {
+  border: 1px solid #005599;
+}
+.main .down .info span {
+  width: 150px;
+  height: 30px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  float: left;
+}
+.main .down .info input {
+  margin: 5px 10px;
+}
+.main .down .info input label {
+  color: #666;
+  font-size: 14px;
+}
+.main .down .info .cityList {
+  margin: 10px 0 10px 90px;
+}
+.main .down .info .cityList select {
+  height: 32px;
+  color: #666;
+  font-size: 14px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #666;
+  margin-left: -3px;
+}
+.main .down .info .clear {
+  line-height: 35px;
+}
+.main .down .info button {
+  padding: 12px 25px;
+  background-color: #7dbc29;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-left: 158px;
+  margin-top: 30px;
+}
+.main .down .info button a {
+  color: #fff;
+  font-size: 14px;
+}
+.main .down .info button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.main .down .info .no {
+  display: none;
+}
+.main .down .info .yes {
+  display: none;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 777;
+}

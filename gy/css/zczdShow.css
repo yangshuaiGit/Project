@@ -1,0 +1,122 @@
+#zczdShow {
+  margin: 15px auto;
+}
+.messageContent-left {
+  float: left;
+  width: 200px;
+  margin-top: 15px;
+}
+.messageContent-left .messageContent-left-title {
+  line-height: 26px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #555;
+  border-bottom: 5px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+.messageContent-left .messageContent-left-title .icon {
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: url(../images/pwf_icon.png) no-repeat 0px -119px;
+  margin-right: 5px;
+}
+.messageContent-left .messageContent-left-nav ul .active {
+  background: #5d96f2;
+  color: #fff;
+}
+.messageContent-left .messageContent-left-nav ul .active:hover {
+  border-left: 3px solid transparent;
+  background: #5d96f2;
+  color: #fff;
+}
+.messageContent-left .messageContent-left-nav ul li {
+  line-height: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border-left: 3px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.messageContent-left .messageContent-left-nav ul li:hover {
+  border-left: 3px solid #5d96f2;
+  background: #f5f5f5;
+  color: #5d96f2;
+  cursor: pointer;
+}
+.messageContent-left .messageContent-left-nav ul li .list {
+  float: left;
+  margin-left: 15px;
+}
+.messageContent-left .messageContent-left-nav ul li .icon {
+  float: right;
+  width: 25px;
+  height: 25px;
+  background: url(../images/pwf_icon.png) no-repeat -75px center;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.messageContent-right {
+  float: right;
+  width: 770px;
+  margin-top: 15px;
+}
+.messageContent-right .messageContent-right-title {
+  border-bottom: 1px dotted #e3e3e3;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.messageContent-right .messageContent-right-news ul li {
+  line-height: 50px;
+  height: 50px;
+  border-bottom: 1px dotted #e3e3e3;
+}
+.messageContent-right .messageContent-right-news ul li:hover {
+  background: #f5f5f5;
+  color: #5d96f2;
+}
+.messageContent-right .messageContent-right-news ul li .time {
+  float: right;
+  color: #999;
+}
+.messageContent-right .messageContent-right-news ul li .icon {
+  float: left;
+  background: url(../images/pwf_icon.png) no-repeat -118px -18px;
+  width: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.messageContent-right .messageContent-right-news ul li .icon2 {
+  display: inline-block;
+  background: url(../images/pwf_icon.png) no-repeat -104px -88px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: -7px;
+}
+.messageContent-right .messageContent-right-num {
+  margin: 20px auto;
+  width: 287px;
+}
+.messageContent-right .messageContent-right-num span {
+  border: 1px solid #999;
+  text-align: center;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
+.messageContent-right .messageContent-right-num .firstPage,
+.messageContent-right .messageContent-right-num .lastPage {
+  width: 55px;
+}
+.messageContent-right .messageContent-right-num .prev,
+.messageContent-right .messageContent-right-num .next {
+  width: 65px;
+}
+.messageContent-right .messageContent-right-num .num {
+  width: 30px;
+  background: #e0e0e0;
+}

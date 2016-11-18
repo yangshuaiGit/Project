@@ -1,0 +1,105 @@
+.zy-header{
+    position: relative;
+    z-index: 5;
+    .logo{
+    	height: 100px;
+	    line-height: 100px;
+	    overflow: hidden;
+	    color: #666;
+    	.logo-img{
+    		float: left;
+    		margin-top: 15px;
+    		width: 158px;
+    		height: 78px;
+    		background: url(../images/logo.jpg) no-repeat;
+    	}
+    	.logo-rt{
+    		float: right;
+    		.icon-line{
+    			display: inline-block;
+    			width: 16px;
+    			height: 16px;
+    			background: url(../images/pwf_icon.png) no-repeat;
+    			background-position: -32px 2px;
+    			margin: 5px 5px 0 5px;
+    		}
+    		.enter{
+    			color: #fff;
+    			border-radius: 3px;
+			    display: inline-block;
+			    padding: 5px 8px 5px 28px;
+			    line-height: 1;
+			    position: relative;
+			    background: #7dbc29 url(../images/logo_16.png) no-repeat 5px 5px;
+			    .new{
+			    	position: absolute;
+			    	top: -6px;
+			    	right: -5px;
+			    }	
+    		}
+    		.sc{
+    			color: #666;
+    			&:hover{
+    				color: #333;
+    				.icon-star{
+    					background-position: -16px 0px;
+    				}
+
+    			}
+    			.icon-star{
+    				display: inline-block;
+    				width: 16px;
+				    height: 16px;
+				    background: url(../images/pwf_icon.png) no-repeat;
+				    display: inline-block;
+				    background-position: 0px 0px;
+				    margin-right: 3px;
+				    margin-bottom: -2px;
+    			}
+    		}
+    	}
+    }
+    .menu{
+    	height: 40px;
+   		background: #5d96f2;
+   		.nav{
+   			li.top{
+   				background: url(../images/menu_line.png) no-repeat 0 center;
+   				float: left;
+   				position: relative;
+   				&:hover,&.active{
+   					.top-link{
+   						background: #4b83ee;
+   					}
+   				}
+			    .top-link{
+					color: #fff;
+					text-align: center;
+				    height: 40px;
+				    line-height: 40px;
+				    display: block;
+				    font-size: 16px;
+				    width: 140px;
+			    }
+			    .sub{
+			    	background: rgba(240,245,248,0.8);
+			    	position: absolute;
+			    	top: 40px;
+			    	left: 0;
+			    	display: none;
+			    	a{
+			    		display: block;
+			    		width: 140px;
+			    		height: 40px;
+			    		line-height: 40px;
+			    		padding-left: 15px;
+			    		box-sizing: border-box;
+			    		&:hover{
+			    			background: #fff;
+			    		}
+			    	}
+			    }
+   			}
+   		}
+    }
+}

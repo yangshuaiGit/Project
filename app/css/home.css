@@ -1,0 +1,381 @@
+.zy-home {
+  padding-top: 18px;
+}
+.zy-home .slider {
+  height: 384px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.zy-home .slider .slider-con {
+  width: 7000px;
+  position: absolute;
+  left: 0;
+}
+.zy-home .slider .slider-con li {
+  width: 1000px;
+  height: 384px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  background: #000;
+}
+.zy-home .slider .slider-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 40px;
+}
+.zy-home .slider .slider-nav li {
+  float: left;
+  border: 2px solid #fff;
+  margin: 4px;
+  background-color: #000;
+  cursor: pointer;
+}
+.zy-home .slider .slider-nav li:hover,
+.zy-home .slider .slider-nav li.active {
+  -webkit-transform: translate(0, -5px);
+      -ms-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+.zy-home .slider .slider-nav li img {
+  width: 120px;
+  height: 58px;
+}
+.zy-home .slider a.point {
+  display: block;
+  width: 45px;
+  height: 140px;
+  position: absolute;
+  margin: 140px 0 0 0;
+  cursor: pointer;
+  opacity: 0.2;
+  background: url(../images/silder_btn.png) no-repeat;
+}
+.zy-home .slider a.point:hover {
+  -webkit-transition: 1s all linear;
+  transition: 1s all linear;
+  opacity: 0.6;
+}
+.zy-home .slider a.point.prev {
+  left: 0;
+  background-position: 0 0;
+}
+.zy-home .slider a.point.next {
+  right: 0;
+  background-position: right 0;
+}
+.zy-home .main {
+  margin: 30px 0;
+}
+.zy-home .main .main-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.zy-home .main .main-title span {
+  font-size: 16px;
+}
+.zy-home .main .main-title a.more {
+  font-size: 14px;
+  color: #999;
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.zy-home .main .main-title a.more:hover {
+  color: #333;
+}
+.zy-home .main .main-title .hd {
+  float: right;
+  width: 117px;
+  position: relative;
+  margin: 8px 40px 0 0;
+  padding: 0 24px;
+}
+.zy-home .main .main-title .hd a {
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+}
+.zy-home .main .main-title .hd a.prev {
+  left: 0;
+  background: url("../images/news_btn_backward.jpg") no-repeat;
+}
+.zy-home .main .main-title .hd a.next {
+  right: 0;
+  background: url("../images/news_btn_forward.jpg") no-repeat;
+}
+.zy-home .main .main-title .hd span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url("../images/pwf_icon.png") no-repeat -24px -168px;
+}
+.zy-home .main .main-title .hd span.on {
+  width: 24px;
+  background-position: 0 -168px;
+}
+.zy-home .main .icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+.zy-home .main .icon.icon-dt {
+  background-position: 0 -24px;
+}
+.zy-home .main .icon.icon-hd {
+  background-position: -48px -24px;
+}
+.zy-home .main .icon.icon-gy {
+  background-position: -72px -24px;
+}
+.zy-home .main .icon.icon-wx {
+  background-position: -24px -24px;
+}
+.zy-home .main .icon.icon-yb {
+  background-position: -96px -24px;
+}
+.zy-home .main .main-left {
+  float: left;
+  width: 728px;
+}
+.zy-home .main .main-left .zxdt .dt-con {
+  width: 728px;
+  overflow: hidden;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box {
+  width: 2268px;
+  position: relative;
+  overflow: hidden;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li {
+  float: left;
+  width: 224px;
+  text-align: center;
+  border: 3px solid #fff;
+  background: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 0 11px;
+  overflow: hidden;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li:nth-child(3n) {
+  margin-right: 0;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li:hover {
+  border: 3px solid #2288ee;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li:hover .ft-title {
+  color: #28e;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li img {
+  width: 218px;
+  height: 172px;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li .dt-foot {
+  background: #f5f5f5;
+}
+.zy-home .main .main-left .zxdt .dt-con .con-box li .dt-foot .time {
+  font-size: 12px;
+  color: #999;
+}
+.zy-home .main .main-left .hdjn {
+  float: left;
+  width: 345px;
+  margin-top: 30px;
+}
+.zy-home .main .main-left .hdjn .picbox {
+  width: 345px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  margin: 15px auto;
+}
+.zy-home .main .main-left .hdjn .picbox .piclist {
+  position: absolute;
+  width: 1035px;
+}
+.zy-home .main .main-left .hdjn .picbox .piclist li {
+  position: relative;
+  width: 345px;
+  height: 240px;
+  overflow: hidden;
+  float: left;
+}
+.zy-home .main .main-left .hdjn .picbox .piclist li img {
+  width: 345px;
+}
+.zy-home .main .main-left .hdjn .picbox .piclist li p {
+  background-color: #000;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  padding: 3px 0;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+}
+.zy-home .main .main-left .hdjn .picbox .pic-point {
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  display: inline-block;
+  margin-bottom: -5px;
+  cursor: pointer;
+}
+.zy-home .main .main-left .hdjn .picbox .pic-point.pic-prev {
+  left: 0;
+  background-position: 0px -88px;
+}
+.zy-home .main .main-left .hdjn .picbox .pic-point.pic-prev:hover {
+  background-position: -24px -88px;
+}
+.zy-home .main .main-left .hdjn .picbox .pic-point.pic-next {
+  right: 0;
+  background-position: -48px -88px;
+}
+.zy-home .main .main-left .hdjn .picbox .pic-point.pic-next:hover {
+  background-position: -72px -88px;
+}
+.zy-home .main .main-left .gygs {
+  float: right;
+  width: 345px;
+  margin-top: 30px;
+}
+.zy-home .main .main-left .gygs .gygs-list li {
+  padding: 3px 0 0 10px;
+  margin-bottom: 5px;
+  background: url(../images/pwf_icon.png) no-repeat -85px 8px;
+  position: relative;
+}
+.zy-home .main .main-left .gygs .gygs-list li span {
+  display: inline-block;
+  height: 20px;
+}
+.zy-home .main .main-left .gygs .gygs-list li span.title {
+  width: 190px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.zy-home .main .main-left .gygs .gygs-list li span.author {
+  width: 75px;
+  text-align: right;
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  left: 190px;
+  top: 3px;
+}
+.zy-home .main .main-right {
+  float: right;
+  width: 242px;
+}
+.zy-home .main .main-right .weixin {
+  padding: 15px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  text-align: center;
+}
+.zy-home .main .main-right .weixin p {
+  margin-bottom: 10px;
+}
+.zy-home .main .main-right .weixin img {
+  display: inline-block;
+}
+.zy-home .main .main-right .gyyb {
+  margin-top: 23px;
+}
+.zy-home .main .main-right .gyyb .yb-con {
+  position: relative;
+  width: 235px;
+  height: 260px;
+  padding: 15px 0px;
+  background-color: #f5f5f5;
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-list {
+  width: 690px;
+  position: absolute;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-list ul {
+  margin: 0 18px;
+  float: left;
+  width: 194px;
+  height: 232px;
+  padding: 5px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-list ul li {
+  text-align: center;
+  width: 182px;
+  height: 220px;
+  position: relative;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-list ul li img {
+  width: 182px;
+  height: 220px;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-list ul li .num-tag {
+  display: inline-block;
+  background: url(../images/mreport_num_bg.png) no-repeat top right;
+  height: 24px;
+  line-height: 24px;
+  min-width: 30px;
+  text-align: center;
+  padding: 0 10px;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-point {
+  width: 24px;
+  height: 24px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  margin-bottom: -5px;
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  cursor: pointer;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-point.yb-prev {
+  left: 10px;
+  background-position: 0px -88px;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-point.yb-prev:hover {
+  background-position: -24px -88px;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-point.yb-next {
+  right: 10px;
+  background-position: -48px -88px;
+}
+.zy-home .main .main-right .gyyb .yb-con .yb-point.yb-next:hover {
+  background-position: -72px -88px;
+}
+.zy-home .topcontrol {
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  opacity: 1;
+  display: none;
+}

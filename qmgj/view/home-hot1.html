@@ -1,0 +1,38 @@
+<div class="detail-show clear" ng-repeat="a in hotList">
+	<img ng-src="{{a.img}}" alt="">
+	<div class="del-txt">
+		<div class="del-txt-top">
+			<h2>{{a.name}}</h2>
+			<p>{{a.tname}}</p>
+			<p class="two">{{a.del}}</p>
+		</div>
+		<div class="del-txt-bot">
+			<p class="icon-txt">
+				<span class="icon icon-play">{{a.txt1}}</span>
+				<span class="icon icon-video">{{a.txt2}}</span>
+			</p>
+			<p class="progress">
+				<span></span>
+			</p>
+
+			<ul class="progress-del clear">
+				<li>
+					<p class="one">{{a.progress1}}</p>
+					<p class="two">{{a.progress2}}</p>
+				</li>
+				<li>
+					<p class="one">{{a.money1}}</p>
+					<p class="two">{{a.money2}}</p>
+				</li>
+				<li>
+					<p class="one">{{a.people1}}</p>
+					<p class="two">{{a.people2}}</p>
+				</li>
+				<li>
+					<p class="one">{{a.day1}}</p>
+					<p class="two">{{a.day2}}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+<div class="register">
+	<div class="register-box">
+		<form action="" method="get" ng-model="myForm"  name="myForm" accept-charset="utf-8">
+		
+		<h3>注册</h3>
+		<!-- phone -->
+		<input class="one" type="text" name="phone" ng-model="phone" required ng-pattern='/^(1[^012][0-9]{9})$/' placeholder="请输入您的手机号码">
+		<div class="error-class" ng-show="myForm.phone.$error.required">手机号是必填项</div>
+		<div class="error-class" ng-show="myForm.phone.$error.pattern">您输入的号码有误，请检查！</div>
+		<!-- 验证码 -->
+		<input class="code" type="text" name="code" ng-model="code" required placeholder="请输入验证码" ng-minlength="5">
+		<button type="button" ng-click="myclick1()" ng-show="!show">点击发送</button>
+		<button type="button" ng-click="!show" ng-show="show">已发送，{{curTime}}秒后重发</button>
+		<div class="error-class" ng-show="myForm.code.$dirty&&myForm.code.$error.minlength">
+			验证码错误，请重新输入！
+		</div>  
+		<!-- 密码 -->
+		<input class="one" type="password" name="password" ng-model="password" required placeholder="请输入密码，不小于6位" ng-minlength="6">
+		<div class="error-class" ng-show="myForm.password.$dirty&&myForm.password.$error.minlength">
+			请输入大于6位的密码！
+		</div>
+
+		<input class="one btn" type="button" value="注册"></input>
+		<div class="check" ng-click="myclick()" ng-class="{active:showActive==1}">
+			同意《全民创造用户协议》
+		</div>
+
+		<p class="three"><span class="line"></span><span class="txt">第三方登陆</span><span class="line"></span></p>
+
+		<div class="icon">
+			<a href="#"><img src="images/weixin.png" alt=""></a>
+			<a href="#"><img src="images/qq.png" alt=""></a>
+			<a href="#"><img src="images/blog.png" alt=""></a>
+		</div>
+	</form>
+
+	</div>
+	<div class="register-bot">
+		<span>已有账户？</span><span ui-sref="login" class="login-txt">登陆</span>
+	</div>
+</div>

@@ -1,0 +1,75 @@
+/*
+	-webkit-tap-highlight-color:transparent;//是元素周围的高亮边框消除
+	-webkit-appearance:none;  使手机端端的input表单元素表现正常
+
+	-webkit-touch-callout: none; 使元素禁止保存
+	-webkit-overflow-scrolling:touch;  使手机滑动时流畅一些
+	::-webkit-scrollbar{width: 0px;}   滚动条
+
+*/
+
+*{margin: 0; padding: 0; font-size: 12px; line-height:20px; -webkit-tap-highlight-color:transparent; -webkit-appearance:none; }
+body{background-color: #feffff;}
+a, img {-webkit-touch-callout: none; }
+body{-webkit-overflow-scrolling:touch;}
+body::-webkit-scrollbar{width: 0px;}
+textarea::-webkit-scrollbar{width: 0px;}
+div::-webkit-scrollbar{width:0px;}
+a:focus,input:focus,div:focus{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+img{display: block; border: none 0; width: 100%;}
+/*为了解决默认圆角*/
+input{border-radius: 0;}
+/*input,textarea{border: 0 none; display: block;}*/
+/*input[type=search] { -webkit-appearance: none; }
+::-webkit-search-cancel-button { -webkit-appearance: none; }
+::-webkit-search-results-button { -webkit-appearance: none; }*/
+.d-block{display: block;}
+.d-none{display: none;}
+.v-none{visibility: hidden;}
+/*文字和li重置*/
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+a{text-decoration: none;}
+li{list-style: none;}
+/*浮动和定位*/
+.fl{float: left;}
+.fr{float: right;}
+.clear:after {clear:both;visibility:hidden;content:"";display:block;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.txt-over{overflow: hidden;white-space: nowrap;text-overflow: ellipsis; }
+
+
+.focus{ width:100%; margin:0 auto; position:relative; overflow:hidden;   }
+.focus .hd{ width:100%; height:5px;  position:absolute; z-index:1; bottom:0; text-align:center;  }
+.focus .hd ul{ overflow:hidden; display:-moz-box; display:-webkit-box; display:box; height:5px; background-color:rgba(51,51,51,0.5);   }
+.focus .hd ul li{ -moz-box-flex:1; -webkit-box-flex:1; box-flex:1; }
+.focus .hd ul .on{ background:#FF4000;  }
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:100%;}
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.ttf') format('truetype'), 
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+}
+.icon-acting:before{ content: '\e600'; font-size: 30px; }
+.icon-add:before{ content: '\e601'; color: #fff; }
+.icon-search:before{ content: '\e602'; }
+.icon-gift:before{ content: '\e603'; font-size: 30px;}
+.icon-location1:before{ content: '\e604'; font-size: 20px; }
+.icon-location2:before{ content: '\e605'; }
+.icon-flag:before{ content: '\e606'; }
+
+
+.global-nav{ position: fixed;bottom: 0;left: 0;width: 100%; padding: 10px 20px;box-sizing: border-box; background-color: #eee; }
+.global-nav a{ text-align: center; float: left;width: 20%;margin-right: 20%;color:#838383;}
+.global-nav a:nth-child(3n){ margin-right: 0; }
+.global-nav p{ font-size: 16px;margin-top: 5px; }
+.red-txt{ color: #d63b3b; }

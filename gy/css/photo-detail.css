@@ -1,0 +1,54 @@
+.photo-detail {
+  margin-top: 20px;
+}
+.photo-detail .location {
+  color: #666;
+  margin-bottom: 12px;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.photo-detail .location a {
+  color: #555;
+  padding: 0 2px;
+}
+.photo-detail .location .span {
+  color: #999;
+  padding: 0 2px;
+}
+.photo-detail .item {
+  height: 660px;
+  border: 1px solid #e6e6e6;
+  padding: 19px;
+}
+.photo-detail .item .left {
+  float: left;
+}
+.photo-detail .item .right {
+  float: right;
+}
+.photo-detail .item .right .cur img {
+  padding: 1px;
+  border: 2px solid #ffd300;
+}
+.photo-detail .item .right li {
+  width: 128px;
+  height: 96px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+.photo-detail .item .right li img {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 1px solid #E8E8E8;
+}
+.photo-detail .item .img {
+  width: 806px;
+  height: 540px;
+  text-align: center;
+  overflow: hidden;
+}
+.photo-detail .item .img img {
+  max-width: 806px;
+  max-height: 540px;
+}

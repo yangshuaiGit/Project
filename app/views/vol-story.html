@@ -1,0 +1,61 @@
+
+
+
+
+        <div class="news-banner">
+		     <img src="images/news.banner.jpg" alt="">
+        </div>
+		<div class="main clear">
+		    <!-- 左侧菜单栏 -->
+			<div class="left-menu">
+				<h3>
+					<i class=" icon icon-page"></i>
+					<span>新闻动态</span>
+
+				</h3>
+				<ul>
+					<li>
+						<a href="volunteer.html">志愿者活动纪念册</a>
+					</li>
+					<li>
+						<a href="#" class="current">公益故事</a>
+					</li>
+					<li>
+						<a href="#">招募广告</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- 右侧内容 -->
+			<div class="right-con">
+				<div class="location">
+					<span>您当前的位置：</span>
+					<a href="#">首页</a>  > 
+					<a href="#">新闻动态</a>  > 
+					<span class="span">顺丰公益动态</span>
+				</div>
+				<ul class="news-list">
+				    ##for(i=0;i< 12;i++){##
+					<li>
+						<a href="#">
+							<span class="title">{{data.vol_story[i]}}
+							<i class="icon icon-new"></i></span>
+							<span class="time">{{data.news.time[i]}}</span>
+						</a>
+					</li>
+					##}##
+				</ul>
+
+				<div class="page">
+					<ul class="clear">
+					    ##for(i=0;i < 7;i++){##
+						<li><a href="#">{{data.news.page[i]}}</a></li>
+						##}##
+					</ul>
+				</div>
+			</div>
+
+
+
+		</div>

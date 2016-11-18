@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/photo-detail.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	
+
+	<header id="header"></header>
+
+	<div class="photo-detail w1000">
+	    <div class="location">
+					<span>您当前的位置：</span>
+					<a href="#">首页</a>  > 
+					<a href="#">我是志愿者</a>  > 
+					<span class="span">志愿者活动纪念册</span>
+		</div>
+		<div class="item clear">
+			<div class="left">
+				<div class="img">
+					<img src="images/photo-detail-1.jpg" alt="">
+					<img src="images/photo-detail-2.jpg" alt="">
+					<img src="images/photo-detail-3.jpg" alt="">
+					<img src="images/photo-detail-4.jpg" alt="">
+				
+				</div>
+				<div class="text">
+					   2016年8月12~18日，古城西安顺丰心梦欢乐之旅。
+				</div>
+			</div>
+			<div class="right">
+				<ul>
+					<li class="cur"><img src="images/photo-detail-1.jpg" alt=""></li>
+					<li><img src="images/photo-detail-2.jpg" alt=""></li>
+					<li><img src="images/photo-detail-3.jpg" alt=""></li>
+					<li><img src="images/photo-detail-4.jpg" alt=""></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer"></footer>
+
+
+    <script src="js/jquery.seajs.underscore.js"></script>
+	<script>
+
+	seajs.config({
+	  base:'./'
+	});
+	seajs.use(['js/xzh-detail.js'],function(a){
+		a.initPage();
+	})
+	</script>
+</body>
+</html>

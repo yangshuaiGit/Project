@@ -1,0 +1,114 @@
+
+        <div class="volunteer-banner">
+		     <img src="../images/volunteer-banner.jpg" alt="">
+        </div>
+
+
+		<div class="main clear">
+		    <!-- 左侧菜单栏 -->
+			<div class="left-menu">
+				<h3>
+					<i class=" icon icon-page"></i>
+					<span>我是志愿者</span>
+
+				</h3>
+				<ul>
+					<li>
+						<a href="news.html"  >顺丰公益动态</a>
+					</li>
+					<li>
+						<a href="news.html">媒体关注</a>
+					</li>
+					<li>
+						<a href="month-page.html" class="current">公益月报</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- 右侧内容 -->
+			<div class="right-con">
+				
+               <div class="location">
+					<span>您当前的位置：</span>
+					<a href="#">首页</a>  > 
+					<a href="#">新闻动态</a>  > 
+					<span class="span">公益月报</span>
+				</div>
+
+				<div class="img-list">
+					<div class="select-year">
+						<ul>
+						    
+							<li class="active"><a>2016</a></li>
+							<li><a>2015</a></li>
+							<li><a>2014</a></li>
+							<li><a>2013</a></li>
+							<li><a>2012</a></li>
+							
+						</ul>
+					</div>
+					<div class="photo">
+					    
+						<ul class="photo-16 clear">
+						##for(i=0;i< 8;i++){##
+							<li>
+								<a href="{{data.month.photo_16[i].href}}">
+								<span class="month-icon">第{{data.month.photo_16[i].much}}期</span>
+								<img src="{{data.month.photo_16[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+								
+									公益月报第{{data.month.photo_16[i].num}}期</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-15 clear">
+						##for(i=0;i< 8;i++){##
+							<li>
+								<a href="{{data.vol.photo_16[i].href}}"><img src="{{data.month.photo_15[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+									公益月报第{{data.month.photo_15[i].num}}期
+									</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-14 clear">
+						##for(i=0;i< 3;i++){##
+							<li>
+								<a href="{{data.month.photo_14[i].href}}"><img src="{{data.month.photo_14[i].img}}" alt=""></a>
+								<p>
+									<a href="#">
+									
+									公益月报第{{data.month.photo_14[i].num}}期</a>
+								</p>
+							</li>
+						##}##
+						</ul>
+						<ul class="photo-13">
+							<li>没有找到相关结果</li>
+						</ul>
+						<ul class="photo-12">
+							<li>没有找到相关结果</li>
+						</ul>
+						
+					</div>
+				</div>
+
+				<div class="page">
+					<ul class="clear">
+					    
+						<li><a href="#">{{data.news.page[1]}}</a></li>
+						<li><a href="#">{{data.news.page[2]}}</a></li>
+						<li><a href="#">{{data.news.page[6]}}</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+
+
+		</div>

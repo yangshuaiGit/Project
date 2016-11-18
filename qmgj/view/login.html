@@ -1,0 +1,37 @@
+<div class="login">
+	<div class="login-box">
+		<form action="" method="get" ng-model="myForm"  name="myForm" accept-charset="utf-8">
+		
+		<h3>登陆</h3>
+		<!-- phone -->
+		<input class="one" type="text" name="phone" ng-model="phone" required ng-pattern='/^(1[^012][0-9]{9})$/' placeholder="请输入您的手机号码">
+		<div class="error-class" ng-show="myForm.phone.$error.required">手机号是必填项</div>
+		<div class="error-class" ng-show="myForm.phone.$error.pattern">您输入的号码有误，请检查！</div>
+		<!-- 密码 -->
+		<input class="one" type="password" name="password" ng-model="password" required placeholder="请输入密码，不小于6位" ng-minlength="6">
+		<div class="clear">
+			<div class="error-class left" ng-show="myForm.password.$dirty&&myForm.password.$error.minlength">
+				请输入大于6位的密码！
+			</div>
+			<a ui-sref="password"><span class="right">忘记密码？</span></a>
+		</div>
+
+		<a ui-sref="personal.per-1"><input class="one btn" type="button" value="登陆"></input></a>
+		<div class="check" ng-click="myclick()" ng-class="{active:showActive==1}">
+			记住我
+		</div>
+
+		<p class="three"><span class="line"></span><span class="txt">第三方登陆</span><span class="line"></span></p>
+
+		<div class="icon">
+			<a href="#"><img src="images/weixin.png" alt=""></a>
+			<a href="#"><img src="images/qq.png" alt=""></a>
+			<a href="#"><img src="images/blog.png" alt=""></a>
+		</div>
+	</form>
+
+	</div>
+	<div class="login-bot">
+		<span>新用户？</span><span ui-sref="register" class="login-txt">立即注册</span>
+	</div>
+</div>

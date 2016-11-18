@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="screen-orientation" content="portrait">
+ 	<meta name="x5-orientation" content="portrait">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+	<title>摇一摇</title>
+	<link rel="stylesheet" type="text/css" href="css/gloabl.css">
+	<link rel="stylesheet" type="text/css" href="css/index2.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+</head>
+<body>
+	<img  src="images/top- img.png" alt="">
+	<img class="snow-bg abs" src="images/snow-bg.png" alt="">
+	<img class="logo abs" src="images/log.png" alt="">
+	<img class="title" src="images/title.png" alt="">
+		<div class="box rel">
+			<img class="card" src="images/card.png" alt="">
+			<img class="ballon abs" src="images/ballon.png" alt="">
+			<img class="snow2 abs" src="images/snow2.png" alt="">
+			<img class="swing-hand abs" src="images/hand-bg.png" alt="">
+			<img class="hand abs" src="images/hand.png" alt="">
+			<img class="snow3 abs" src="images/snow3.png" alt="">
+			<p class="txt">您还有<span>2</span>次的抽奖机会</p>
+		</div>
+		<div class="bottom">
+			<img class="swing-hand2 abs" src="images/swing-hand2.png" alt="">
+			<img class="bot-img" src="images/bot-img.png" alt="">
+		</div>
+
+
+		<div class="mask abs">
+			<div class="mask-content">
+				<h2>恭喜您中奖啦</h2>
+				<p>10元现金红包</p>
+				<img class="mask-img" src="images/mask-img.png" alt="">
+				<img class="mask-btn" src="images/mask-btn.png" alt="">
+			</div>
+		</div>
+	<script>
+		$(function(){
+            $('.swing-hand2').click(function(){
+            	$('.mask').fadeIn(300);
+            });
+            $('.mask').click(function(){
+            	$(this).fadeOut(300);
+            });
+		});
+	</script>
+</body>
+</html>

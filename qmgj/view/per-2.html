@@ -1,0 +1,29 @@
+<div class="bot1">
+	<p class="message1 clear">
+		<span class="one">修改头像</span>
+		<img src="images/add.png" alt="">
+	</p>
+	<p class="message2 clear">
+		<span class="one">用户昵称</span>
+		<input type="text" name="" value="" placeholder="">
+	</p>
+	<p class="message3 clear">
+		<span class="one">性别</span>
+		<a class="clear">
+			<span class="circle" ng-click="mycl(0)" ng-class="{active:Active==0}"></span>
+			<span>男</span>
+		</a>-
+		<a class="clear">
+			<span class="circle" ng-click="mycl(1)" ng-class="{active:Active==1}"></span>
+			<span>女</span>
+		</a>
+	</p>
+	<div class="message4 clear">
+		<span class="one">关注圈子</span>
+		<ul>
+			<li ng-repeat="str in ringList" ng-click="Perclick($index)" ng-class="{active:showPer[$index]}">{{str.name}}</li>
+			<!-- <li ng-repeat="str in ringList" ng-click="toggle = !toggle" ng-class="{'active' : toggle}">{{str.name}}</li> -->
+  		</ul>
+	</div>
+	<div class="btn">保存</div>
+</div>

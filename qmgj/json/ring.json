@@ -1,0 +1,65 @@
+ [
+        {
+            "name": "微电影",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "电影",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "电视剧",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "戏曲",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "相声",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "话剧",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "书画",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "戏剧",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "音乐剧",
+            "img":"images/bank.png"
+        },
+        {
+            "name": "歌剧",
+            "img":"images/bank.png"
+        },
+        {
+            "img":"images/bank.png"
+        },
+         {
+            "img":"images/bank.png"
+        },
+
+         {
+            "img":"images/bank.png"
+        },
+         {
+            "img":"images/bank.png"
+        },
+         {
+            "img":"images/bank.png"
+        },
+         {
+            "img":"images/bank.png"
+        },
+         {
+            "img":"images/bank.png"
+        }
+
+    ]

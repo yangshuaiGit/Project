@@ -1,0 +1,125 @@
+<div class="box">
+	<!-- <ul> -->
+	<div class="banner" ng-style="{zIndex: showIndex==$index?'1':'0'}" ng-repeat="str in List">
+		<img class="banner-img"  ng-src="{{str.img}}"  alt="">
+		<div class="mask">
+			<p class="title">{{str.name}}</p>
+			<p class="two">{{str.fname}}</p>
+			<p><a ui-sref="detail({id:{{str.id}}})"><img class="img-btn" src="images/check-btn.png" alt=""></a></p>
+		</div>
+	</div>
+	<!-- </ul> -->
+	<p class="diractor">
+	<span ng-class="{active:showIndex==0}"></span>
+	<span ng-class="{active:showIndex==1}"></span>
+	</p> 
+</div>
+
+<!-- 热门推荐 -->
+<div class="hot-pro">
+
+	<div class="content clear">
+		<div class="hot-pro-left">
+			<h2 class="title clear">
+				热门项目
+				<span>查看更多</span>
+			</h2>
+			<ul class="detail-show clear">
+				<li class="clear"  ng-repeat="a in Hlist" ng-show="showActive==$index">
+					<img ui-sref="detail({id:{{a.id}}})" ng-src="{{a.img}}" alt="">
+					<div class="del-txt">
+						<div class="del-txt-top">
+							<h2>{{a.name}}</h2>
+							<p>{{a.tname}}</p>
+							<p class="two">{{a.del}}</p>
+						</div>
+						<div class="del-txt-bot">
+							<p class="icon-txt1">
+								<span class="icon icon-play one">{{a.txt1}}</span>
+								<span class="icon icon-video">{{a.txt2}}</span>
+							</p>
+							<p class="progress">
+								<span style="width:{{arr[$index]+'px'}}"></span>
+							</p>
+							<ul class="progress-del clear">
+								<li>
+									<p class="one">{{a.progress1}}</p>
+									<p class="two">{{a.progress2}}</p>
+								</li>
+								<li>
+									<p class="one">{{a.money1}}</p>
+									<p class="two">{{a.money2}}</p>
+								</li>
+								<li>
+									<p class="one">{{a.people1}}</p>
+									<p class="two">{{a.people2}}</p>
+								</li>
+								<li>
+									<p class="one">{{a.day1}}</p>
+									<p class="two">{{a.day2}}</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="hot-pro-right">
+			<a href=""  ng-repeat="b in Nlist" ng-click="myclick($index)" ng-class="{red:showActive==$index}">{{b.txt}}</a>
+		</div>
+	</div>
+</div>
+
+
+<!-- 卫视推荐 -->
+<div class="recom-box">
+	<div class="content">
+		<h2 class="title">
+			卫视推荐
+			<span ui-sref="program">查看全部</span>
+		</h2>
+		<ul  class="rec-show1 clear">
+			<li class="one" ng-repeat='a in Rlist'>
+				<a ui-sref="detail({id:{{a.id}}})"><img class="rec-img" ng-src="{{a.img}}" alt=""></a>
+				<div class="del-txt">
+					<div class="del-txt-top">
+						<h2>{{a.name}}</h2>
+						<p>{{a.tname}}</p>
+						<p class="two">{{a.del}}</p>
+					</div>
+					<div class="del-txt-bot">
+						<p class="icon-txt">
+							<span class="icon icon-play">{{a.txt1}}</span>
+						</p>
+						<p class="progress">
+							<span style="width:{{arr1[$index]+'px'}}"></span>
+						</p>
+						<ul class="progress-del clear">
+							<li>
+							<p class="one">{{a.progress1}}</p>
+							<p class="two">{{a.progress2}}</p>
+							</li>
+							<li>
+								<p class="one">{{a.money1}}</p>
+								<p class="two">{{a.money2}}</p>
+							</li>
+							<li>
+								<p class="one">{{a.people1}}</p>
+								<p class="two">{{a.people2}}</p>
+							</li>
+							<li>
+								<p class="one">{{a.day1}}</p>
+								<p class="two">{{a.day2}}</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="part content">
+	<h3>合作单位</h3>
+	<img ng-repeat="c in Ilist" ng-src="{{c.imgs}}" alt="">
+</div>

@@ -1,0 +1,33 @@
+<div class="personal-box">
+	<div class="box-top personal clear">
+		<div class="per-left">
+			<img src="images/personal-img1.png" alt="">
+			<div class="icon-box">
+				<span class="icon icon-tel"></span>
+				<span class="icon icon-message"></span>
+				<span class="icon icon-me"></span>
+			</div>
+		</div>
+		<div class="per-right">
+			<h1 class="txt">{{pList.name}}<span>{{pList.hello}}</span></h1>
+			<p>
+				<span>{{pList.txt}}</span>
+				<a class="progress">
+					<span></span>
+				</a>
+				<span class="red">{{pList.txt1}}</span>
+			</p>
+			<p>{{pList.txt2}}</p>
+		</div>
+	</div>
+	<div class="box-bot personal1 clear">
+		<ul class="bot-left">
+			<li ui-sref="personal.per-1" ui-sref-active="active" >个人主页</li>
+			<li ui-sref="personal.per-2" ui-sref-active="active">个人信息</li>
+			<li ui-sref="personal.per-3" ui-sref-active="active" >安全设置</li>
+			<li ui-sref="personal.per-4" ui-sref-active="active" >关注的圈子</li>
+			<li ui-sref="personal.per-5" ui-sref-active="active">购买记录</li>
+		</ul>
+		<div class="bot-right" ui-view></div>
+	</div>
+</div>

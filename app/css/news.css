@@ -1,0 +1,104 @@
+.news-banner {
+  margin-top: 15px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/news.icon.png) no-repeat;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+.left-menu {
+  width: 200px;
+  float: left;
+  padding-top: 20px;
+}
+.left-menu h3 {
+  line-height: 26px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #555;
+  border-bottom: 5px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+.left-menu h3 .icon-page {
+  background-position: 0 -120px;
+  margin-right: 5px;
+}
+.left-menu ul .current {
+  color: #fff;
+  background: #5d96f2 url(../images/arrow.png) no-repeat 175px center;
+  text-decoration: none;
+  border-left: 3px solid #5d96f2;
+}
+.left-menu ul li a {
+  display: block;
+  font-size: 16px;
+  padding: 8px 15px;
+}
+.right-con {
+  width: 770px;
+  float: right;
+  padding: 25px 0;
+}
+.right-con .location {
+  color: #666;
+  margin-bottom: 12px;
+  border-bottom: 1px dotted #dfdfdf;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.right-con .location a {
+  color: #555;
+  padding: 0 2px;
+}
+.right-con .location .span {
+  color: #999;
+  padding: 0 2px;
+}
+.right-con .news-list li {
+  background: #fff url(../images/news.icon.png) no-repeat -117px -6px;
+  border-bottom: 1px dotted #dfdfdf;
+}
+.right-con .news-list li a {
+  padding: 10px 0 10px 12px;
+  display: block;
+}
+.right-con .news-list li a span {
+  display: inline-block;
+}
+.right-con .news-list li a .title {
+  width: 678px;
+}
+.right-con .news-list li a .icon-new {
+  background-position: -104px -88px;
+  margin-left: 5px;
+  margin-bottom: -4px;
+  width: 16px;
+  height: 16px;
+}
+.right-con .news-list li a .time {
+  width: 80px;
+  color: #999;
+  font-size: 12px;
+  float: right;
+}
+.right-con .page {
+  margin-top: 30px;
+  text-align: center;
+}
+.right-con .page li {
+  display: inline-block;
+}
+.right-con .page li:nth-child(3) a {
+  background: #e0e0e0;
+}
+.right-con .page li a {
+  color: #999;
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+}
+.right-con .page li .active {
+  background: #e0e0e0;
+}

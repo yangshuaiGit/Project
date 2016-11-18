@@ -1,0 +1,179 @@
+.month-page {
+    margin-top: 15px;
+    .icon {
+        width: 24px;
+        height: 24px;
+        background: url(../images/news.icon.png) no-repeat;
+        display: inline-block;
+        margin-bottom: -5px;
+    }
+    .left-menu {
+        width: 200px;
+        float: left;
+        padding-top: 20px;
+        h3 {
+            line-height: 26px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #555;
+            border-bottom: 5px solid #f0f0f0;
+            padding-bottom: 10px;
+            .icon-page {
+                background-position: 0 -120px;
+                margin-right: 5px;
+            }
+        }
+        ul {
+            .current {
+                color: #fff;
+                background: #5d96f2 url(../images/arrow.png) no-repeat 175px center;
+                text-decoration: none;
+                border-left: 3px solid #5d96f2;
+            }
+            li {
+                a {
+                    display: block;
+                    font-size: 16px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+    .right-con {
+        width: 770px;
+        float: right;
+        padding: 25px 0;
+        .location {
+            color: #666;
+            margin-bottom: 12px;
+            border-bottom: 1px dotted #dfdfdf;
+            font-size: 13px;
+            padding-bottom: 10px;
+            a {
+                color: #555;
+                padding: 0 2px
+            }
+            .span {
+                color: #999;
+                padding: 0 2px;
+            }
+        }
+        .select-year {
+            border-bottom: 5px solid #f0f0f0;
+            padding-bottom: 5px;
+            overflow: hidden;
+            padding-top: 10px;
+            li {
+                display: inline-block;
+                a {
+                    display: inline-block;
+                    float: left;
+                    font-size: 20px;
+                    color: #888;
+                    padding: 0 15px;
+                    cursor: pointer;
+                }
+            }
+            .active a {
+                color: #5d96f2;
+                font-size: 22px;
+                margin-top: 0px;
+                font-weight: bold
+            }
+        }
+        .photo {
+            ul {
+                display: none;
+            }
+            .photo-13,
+            .photo-12 {
+                height: 200px;
+                li {
+                    border: none;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 18px;
+                }
+            }
+            .photo-16,.photo-15,.photo-14 {
+                display: block;
+                li {
+                width: 179px;
+                height: 244px;
+                padding: 5px;
+                border: 1px solid #dfdfdf;
+                background-color: #fff;
+                float: left;
+                margin-right: 15px;
+                margin-bottom: 28px;
+                position:relative;
+                p{    position: absolute;
+    text-align: center;
+    margin-left: -6px;
+    width: 179px;}
+                &:nth-child(4n) {
+                    margin-right: 0
+                }
+                &:hover {
+                    background: #5d96f2;
+                    a {
+                        color: #fff;
+                        i {
+                            background-position: -144px -120px
+                        }
+                    }
+                    color: #fff;
+                    text-shadow: none;
+                }
+                img {
+                    width: 168px;
+                    height: 210px;
+                }
+                i {
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/pwf_icon.png) no-repeat;
+                    display: inline-block;
+                    margin-bottom: -5px;
+                    background-position: -48px -24px;
+                    margin-right: 5px;
+                }
+            }
+            }
+            margin-top: 20px;
+            
+            .month-icon {
+                display: inline-block;
+                background: url(../images/month-page-icon.png) no-repeat top right;
+                height: 24px;
+                line-height: 24px;
+                min-width: 30px;
+                text-align: center;
+                padding: 0 10px;
+                color: #fff;
+                position: absolute;
+                margin-top: -5px;
+                margin-left: -5px;
+            }
+        }
+        .page {
+            margin-top: 30px;
+            text-align: center;
+            li {
+                &:nth-child(3) a {
+                    background: #e0e0e0
+                }
+                display: inline-block;
+                a {
+                    color: #999;
+                    padding: 5px 10px;
+                    border: 1px solid #dfdfdf;
+                    display: inline-block;
+                }
+                .active {
+                    background: #e0e0e0;
+                }
+            }
+        }
+    }
+}

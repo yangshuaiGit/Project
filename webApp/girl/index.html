@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="screen-orientation" content="portrait">
+ 	<meta name="x5-orientation" content="portrait">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+	<title>rem布局</title>
+	<link rel="stylesheet" type="text/css" href="css/gloabl.css">
+	<link rel="stylesheet" type="text/css" href="css/rem.css">
+	<!-- <style type="text/css" media="screen">
+		*{ margin: 0;padding: 0; }
+		/*html{ font-size: 20px; }*/
+		div{ width: 6.4rem; background-color: #f00; }
+		img{ width: 6.4rem; }
+	</style> -->
+
+
+</head>
+<body>
+<content>
+	<div class="index-top1">
+		<span class="icon icon-fresh"></span>
+		<h2>时尚女装</h2>
+		<span class="icon icon-search"></span>
+	</div>
+	<div class="index-nav">
+		<section class="active">人气最高</section>
+		<section>人气最高</section>
+		<section>人气最高</section>
+	</div>
+	<!-- banner -->
+	<div class="banner">
+		<img src="images/banner5.png" alt="">
+	</div>
+
+	<!-- 功能区 -->
+	<div class="index-iconbox">
+		<a href="#"><img src="images/two-code.png" alt="">
+			<p>二维码</p>
+		</a>
+		<a href="#"><img src="images/two-code.png" alt="">
+			<p>二维码</p>
+		</a>
+		<a href="#"><img src="images/two-code.png" alt="">
+			<p>二维码</p>
+		</a>
+		<a href="#"><img src="images/two-code.png" alt="">
+			<p>二维码</p>
+		</a>
+	</div>
+
+	<!-- 热点区 -->
+	<div class="index-hotbox">
+		<a href="#">
+			<img src="images/week-img.png" alt="">
+			<p>新品热区</p>
+		</a>
+		<a href="#">
+			<img src="images/week-img.png" alt="">
+			<p>新品热区</p>
+		</a>
+	</div>
+	<div class="index-hotbox">
+		<a href="#">
+			<img src="images/week-img.png" alt="">
+			<p>新品热区</p>
+		</a>
+		<a href="#">
+			<img src="images/week-img.png" alt="">
+			<p>新品热区</p>
+		</a>
+	</div>
+
+	<!-- 广告区 -->
+	<div class="index-ad-box">
+		<a class="left" href="#"><img src="images/group3.png" alt=""></a>
+		<article class="right">
+			<a href="#"><img src="images/group4.png" alt=""></a>
+			<a href="#"><img src="images/group4.png" alt=""></a>
+		</article>
+	</div>
+
+	<div class="index-big-ad">
+		<img src="images/show-img.png" alt="">
+	</div>
+
+	<h3 class="index-title">产品列表</h3>
+	<a href="#" class="index-big-ad">
+		<img src="images/show-img2.png" alt="">
+	</a>
+	<div class="index-list-box">
+		<section>
+			<a href="#"><img class="index-listimg" src="images/show-img3.png" alt=""></a>
+			<div class="index-listright">
+				<a href="#" class="index-iteaname">碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子</a>
+				<p class="index-price">
+					<span class="new" data-coin='￥'>50</span>
+					<del class="old" data-coin='￥'>100.00</del>
+				</p>
+				<p class="f-gray">586人购买</p>
+				<span class="icon icon-cart abs"></span>
+			</div>
+		</section>
+
+		<section>
+			<a href="#"><img class="index-listimg" src="images/show-img3.png" alt=""></a>
+			<div class="index-listright">
+				<a href="#" class="index-iteaname">碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子</a>
+				<p class="index-price">
+					<span class="new" data-coin='￥'>50</span>
+					<del class="old" data-coin='￥'>100.00</del>
+				</p>
+				<p class="f-gray">586人购买</p>
+				<span class="icon icon-cart abs"></span>
+			</div>
+		</section>
+		<section>
+			<a href="#"><img class="index-listimg" src="images/show-img3.png" alt=""></a>
+			<div class="index-listright">
+				<a href="#" class="index-iteaname">碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子碎花裙子</a>
+				<p class="index-price">
+					<span class="new" data-coin='￥'>50</span>
+					<del class="old" data-coin='￥'>100.00</del>
+				</p>
+				<p class="f-gray">586人购买</p>
+				<span class="icon icon-cart abs"></span>
+			</div>
+		</section>
+	</div>
+
+	<!-- bottom -->
+	<div class="fix-bottom-nav">
+		<a href="#" class="active">
+			<span class="icon icon-home active"></span>
+			<p class="txt active">首页</p>
+		</a>
+		<a href="#">
+			<span class="icon icon-pro"></span>
+			<p class="txt">产品分类</p>
+		</a>
+		<a href="#">
+			<span class="icon icon-center"></span>
+			<p class="txt">商城中心</p>
+		</a>
+		<a href="#">
+			<span class="icon icon-news"></span>
+			<p class="txt">行业新闻</p>
+		</a>
+		<a href="#">
+			<span class="icon icon-vip"></span>
+			<p class="txt">会员中心</p>
+		</a>
+			
+			
+			
+			
+	</div>
+
+
+</content>
+
+	<script>
+	window.onresize = function(){
+			rootSize();
+		}
+	function rootSize(){
+		var docuwidth = document.documentElement.clientWidth;
+		var obHtml = document.getElementsByTagName('html')[0];
+		// 如果设计稿是640px  每份是100px
+		// 6.4 设计图所划分的份数
+		obHtml.style.fontSize = docuwidth/6.4 +'px';
+	}
+	rootSize();
+	</script>
+</body>
+</html>

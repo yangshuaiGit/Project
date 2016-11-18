@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/month-detail.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	
+
+	<header id="header"></header>
+
+	<div class="month-detail w1200">
+	 <div class="location">
+					<span>您当前的位置：</span>
+					<a href="#">首页</a>  > 
+					<a href="news.html">新闻动态</a>  > 
+					<a href="month-page.html">公益月报</a>
+				</div>
+	    <div class="title">
+	    	<h1>公益月报第22期</h1>
+	    	<p>2015-11-27</p>
+	    </div>
+	    <div class="main">
+	    	<img src="images/month-detail1.jpg" alt="">
+	    </div>
+	</div>
+
+	<footer id="footer"></footer>
+
+
+    <script type="text/javascript" src="js/jquery.seajs.underscore.js"></script>
+	<script>
+
+	seajs.config({
+	  base:'./'
+	});
+	seajs.use(['js/month-detail.js'],function(a){
+		a.initPage();
+	})
+	</script>
+</body>
+</html>

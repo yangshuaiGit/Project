@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>信息公示</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/messageShow.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+	<header id="header"></header>
+	<div id="messageShow" class="w1000"></div>
+	<footer id="footer"></footer>
+
+	<script src="js/jquery.seajs.underscore.js"></script>
+	<script>
+		seajs.config({
+			base: './'	
+		});
+		seajs.use(['js/home.js','js/message.js','js/messageFun.js'],function(a,b,c){
+			a.initPage();
+			c.active();
+		});
+	</script>
+</body>
+</html>

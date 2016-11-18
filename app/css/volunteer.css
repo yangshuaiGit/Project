@@ -1,0 +1,169 @@
+.volunteer {
+  margin-top: 15px;
+}
+.volunteer .icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/news.icon.png) no-repeat;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+.volunteer .left-menu {
+  width: 200px;
+  float: left;
+  padding-top: 20px;
+}
+.volunteer .left-menu h3 {
+  line-height: 26px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #555;
+  border-bottom: 5px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+.volunteer .left-menu h3 .icon-page {
+  background-position: 0 -120px;
+  margin-right: 5px;
+}
+.volunteer .left-menu ul .current {
+  color: #fff;
+  background: #5d96f2 url(../images/arrow.png) no-repeat 175px center;
+  text-decoration: none;
+  border-left: 3px solid #5d96f2;
+}
+.volunteer .left-menu ul li a {
+  display: block;
+  font-size: 16px;
+  padding: 8px 15px;
+}
+.volunteer .right-con {
+  width: 770px;
+  float: right;
+  padding: 25px 0;
+  margin-top: 20px;
+}
+.volunteer .right-con .location {
+  color: #666;
+  margin-bottom: 12px;
+  border-bottom: 1px dotted #dfdfdf;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.volunteer .right-con .location a {
+  color: #555;
+  padding: 0 2px;
+}
+.volunteer .right-con .location .span {
+  color: #999;
+  padding: 0 2px;
+}
+.volunteer .right-con .select-year {
+  border-bottom: 5px solid #f0f0f0;
+  padding-bottom: 5px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.volunteer .right-con .select-year li {
+  display: inline-block;
+}
+.volunteer .right-con .select-year li a {
+  display: inline-block;
+  float: left;
+  font-size: 20px;
+  color: #888;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.volunteer .right-con .select-year .active a {
+  color: #5d96f2;
+  font-size: 22px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+.volunteer .right-con .photo ul {
+  display: none;
+}
+.volunteer .right-con .photo .photo-13,
+.volunteer .right-con .photo .photo-12 {
+  height: 200px;
+}
+.volunteer .right-con .photo .photo-13 li,
+.volunteer .right-con .photo .photo-12 li {
+  border: none;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+.volunteer .right-con .photo .photo-16,
+.volunteer .right-con .photo .photo-15,
+.volunteer .right-con .photo .photo-14 {
+  display: block;
+}
+.volunteer .right-con .photo .photo-16 li,
+.volunteer .right-con .photo .photo-15 li,
+.volunteer .right-con .photo .photo-14 li {
+  border: 1px solid #dfdfdf;
+  padding: 5px;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+.volunteer .right-con .photo .photo-16 li:nth-child(3n),
+.volunteer .right-con .photo .photo-15 li:nth-child(3n),
+.volunteer .right-con .photo .photo-14 li:nth-child(3n) {
+  margin-right: 0;
+}
+.volunteer .right-con .photo .photo-16 li:hover,
+.volunteer .right-con .photo .photo-15 li:hover,
+.volunteer .right-con .photo .photo-14 li:hover {
+  background: #5d96f2;
+  color: #fff;
+  text-shadow: none;
+}
+.volunteer .right-con .photo .photo-16 li:hover a,
+.volunteer .right-con .photo .photo-15 li:hover a,
+.volunteer .right-con .photo .photo-14 li:hover a {
+  color: #fff;
+}
+.volunteer .right-con .photo .photo-16 li:hover a i,
+.volunteer .right-con .photo .photo-15 li:hover a i,
+.volunteer .right-con .photo .photo-14 li:hover a i {
+  background-position: -144px -120px;
+}
+.volunteer .right-con .photo .photo-16 li img,
+.volunteer .right-con .photo .photo-15 li img,
+.volunteer .right-con .photo .photo-14 li img {
+  width: 230px;
+  height: 152.83px;
+}
+.volunteer .right-con .photo .photo-16 li i,
+.volunteer .right-con .photo .photo-15 li i,
+.volunteer .right-con .photo .photo-14 li i {
+  width: 24px;
+  height: 24px;
+  background: url(../images/pwf_icon.png) no-repeat;
+  display: inline-block;
+  margin-bottom: -5px;
+  background-position: -48px -24px;
+  margin-right: 5px;
+}
+.volunteer .right-con .page {
+  margin-top: 30px;
+  text-align: center;
+}
+.volunteer .right-con .page li {
+  display: inline-block;
+}
+.volunteer .right-con .page li:nth-child(3) a {
+  background: #e0e0e0;
+}
+.volunteer .right-con .page li a {
+  color: #999;
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+}
+.volunteer .right-con .page li .active {
+  background: #e0e0e0;
+}

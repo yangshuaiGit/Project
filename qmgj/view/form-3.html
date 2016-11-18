@@ -1,0 +1,27 @@
+<ul class="ul-box clear">
+		<li class="active1">
+			<span class="circle active1">1</span>
+			<p class="txt active1">填写核对信息</p>
+		</li>
+		<li class="active1">
+			<span class="circle active1">2</span>
+			<p class="txt active1">支付</p>
+		</li>
+		<li class="active">
+			<span class="circle active">3</span>
+			<p class="txt active">完成</p>
+		</li>
+	</ul>
+	<div class="container" ng-repeat="c in form3">
+		<h1><img ng-src="{{c.img}}" alt=""></h1>
+		<div class="container-success">
+			<h2>{{c.txt1}}</h2>
+			<p>
+				{{c.txt2}}
+			</p>
+			<div class="success-bot clear">
+				<div class="blue">看看其他众筹项目</div>
+				<div class="check">查看已支持的项目</div>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,49 @@
+<ul class="ul-box clear">
+		<li class="active">
+			<span class="circle active">1</span>
+			<p class="txt active">填写核对信息</p>
+		</li>
+		<li>
+			<span class="circle">2</span>
+			<p class="txt">支付</p>
+		</li>
+		<li>
+			<span class="circle">3</span>
+			<p class="txt">完成</p>
+		</li>
+	</ul>
+<div class="container" ng-repeat="a in form1">
+		<h1>{{a.name}}</h1>
+		<div class="container-box">
+			<div class="txt1 clear">
+				<p class="one">支持金额：</p>
+				<span>{{a.txt2}}</span>
+			</div>
+			<div class="txt2 clear">
+				<p class="one">支持回报：</p>
+				<div class="two">
+					<p>{{a.txt7}}</p>
+					<p><span>{{a.txt6}}</span>{{a.txt8}}</p>
+				</div>
+			</div>
+			<div class="txt3 clear">
+				<p class="one">备注：</p>
+				<textarea name="" rows="7" cols="140">{{a.txt10}}</textarea>
+			</div>
+			<div class="txt4 clear">
+				<p class="one">联系方式：</p>
+				<input type="text" name="" value="" placeholder="您的称呼">
+				<span class="black">{{a.txt11}}</span>
+				<span>{{a.txt12}}</span>
+			</div>
+		</div>
+		<div class="txt5">
+			<h2>风险说明</h2>
+			<p>{{a.txt13}}</p>
+			<p>{{a.txt14}}</p>
+			<p>{{a.txt15}}</p>
+			<h2 class="sec">特别说明</h2>
+			<p>{{a.txt16}}</p>
+			<div class="btn" ui-sref="form.form-2">确认支持</div>
+		</div>
+	</div>	

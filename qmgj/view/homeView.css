@@ -1,0 +1,255 @@
+.box {
+  position: relative;
+  height: 650px;
+}
+.box .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+.box .banner .banner-img {
+  width: 100%;
+  height: 650px;
+  border: 0 none;
+}
+.box .banner .mask {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 0;
+}
+.box .banner .mask .title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.box .banner .mask .two {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.box .banner .mask .img-btn {
+  cursor: pointer;
+}
+.box .diractor {
+  z-index: 10;
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+  width: 250px;
+  height: 10px;
+}
+.box .diractor span {
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.box .diractor span.active {
+  background-color: red;
+}
+.content {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.hot-pro {
+  background-color: #f7fafa;
+  border-bottom: 2px solid #eee;
+}
+.hot-pro .hot-pro-left {
+  float: left;
+  width: 900px;
+  padding-right: 50px;
+}
+.hot-pro .hot-pro-left .title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.hot-pro .hot-pro-left .title span {
+  float: right;
+  font-size: 12px;
+  color: #C3B9B9;
+}
+.hot-pro .hot-pro-left .detail-show li {
+  float: left;
+}
+.hot-pro .hot-pro-left .detail-show img {
+  float: left;
+  width: 318px;
+  height: 242px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt {
+  float: right;
+  width: 500px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-top {
+  margin-bottom: 40px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-top h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-top p {
+  color: #828587;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-top p.two {
+  margin-top: 25px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .icon-txt1 span.icon {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #828587;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .progress {
+  margin: 10px 0px;
+  width: 500px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: #d9d9de;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .progress span {
+  display: inline-block;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff4200;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .progress-del li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .progress-del li p.one {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.hot-pro .hot-pro-left .detail-show .del-txt .del-txt-bot .progress-del li p.two {
+  color: #828587;
+}
+.hot-pro .hot-pro-right {
+  float: right;
+  width: 140px;
+}
+.hot-pro .hot-pro-right a {
+  display: block;
+  padding: 10px 15px;
+  color: #828587;
+  border-left: 2px solid #eee;
+}
+.hot-pro .hot-pro-right a:hover {
+  border-left: 2px solid red;
+}
+.hot-pro .hot-pro-right a.red {
+  border-left: 2px solid red;
+}
+.recom-box {
+  border-bottom: 2px solid #eee;
+}
+.recom-box .title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.recom-box .title span {
+  float: right;
+  cursor: pointer;
+  font-size: 12px;
+  color: #C3B9B9;
+  display: inline-block;
+  border: 1px solid #eee;
+  padding: 5px;
+}
+.recom-box .rec-show1 li {
+  list-style: none;
+  float: left;
+}
+.recom-box .rec-show1 li.one {
+  width: 320px;
+  margin-right: 40px;
+  border: 1px solid #d9d9de;
+  border-radius: 8px;
+}
+.recom-box .rec-show1 li.one:nth-child(3n) {
+  margin-right: 0;
+}
+.recom-box .rec-show1 li .rec-img {
+  width: 318px;
+  height: 238px;
+  display: block;
+  border: 0 none;
+  border-radius: 8px;
+}
+.recom-box .rec-show1 li .del-txt {
+  padding: 10px;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-top {
+  margin-bottom: 40px;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-top h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-top p {
+  color: #828587;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-top p.two {
+  margin-top: 20px;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .icon-txt span.icon {
+  font-size: 14px;
+  color: #828587;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .progress {
+  margin: 10px 0px;
+  width: 300px;
+  height: 7px;
+  border-radius: 4px;
+  line-height: 7px;
+  background-color: #d9d9de;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .progress span {
+  display: inline-block;
+  height: 7px;
+  width: 140px;
+  border-radius: 4px;
+  background-color: #ff4200;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .progress-del li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .progress-del li p.one {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.recom-box .rec-show1 li .del-txt .del-txt-bot .progress-del li p.two {
+  color: #828587;
+}
+.part h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+.part img {
+  display: inline-block;
+  border: 0 none;
+  margin-right: 20px;
+}
+.part img:nth-of-type(5) {
+  margin-right: 0;
+}
